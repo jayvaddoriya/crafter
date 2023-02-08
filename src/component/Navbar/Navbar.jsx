@@ -1,10 +1,9 @@
 import { Header } from "antd/es/layout/layout";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./navbar.scss";
 import crafter from "../../assets/svg/Crafter.svg";
 import { NavLink } from "react-router-dom";
-import { Button, Drawer } from "antd";
-import Link from "antd/es/typography/Link";
+import { Drawer } from "antd";
 
 const linksItem = [
   {
@@ -35,25 +34,25 @@ const linksItem = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
   const showDrawer = () => {
     setOpen(true);
   };
   const onClose = () => {
     setOpen(false);
   };
-  const handleScroll = () => {
-    const offset = window.scrollY;
+  // const handleScroll = () => {
+  //   const offset = window.scrollY;
 
-    if (offset > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-  });
+  //   if (offset > 50) {
+  //     setScrolled(true);
+  //   } else {
+  //     setScrolled(false);
+  //   }
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  // });
   return (
     <div>
       <Header className="header">

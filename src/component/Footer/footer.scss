@@ -3,13 +3,13 @@
 .footer {
   padding: 120px 216px 73px 216px;
   @media (max-width: 1440px) {
-    padding: 120px 100px 73px 100px;
+    padding: 100px 100px 73px 100px;
   }
   @media (max-width: 1024px) {
-    padding: 120px 60px 73px 60px;
+    padding: 72px 60px 73px 60px;
   }
   @media (max-width: 768px) {
-    padding: 40px 60px 40px 60px;
+    padding: 40px 50px 40px 50px;
   }
   background-color: $whiteColor;
   border-top: 2px solid #eeeeee;
@@ -19,6 +19,9 @@
     line-height: 28px;
     margin-bottom: 62px;
     font-family: $primary-font !important;
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
     @media (max-width: 768px) {
       font-size: 15px;
       line-height: 18px;
@@ -36,6 +39,10 @@
     &:hover {
       color: $primaryColor;
     }
+    @media (max-width: 1024px) {
+      font-size: 20px;
+      line-height: 18px;
+    }
     @media (max-width: 768px) {
       font-size: 13px;
       line-height: 15px;
@@ -47,6 +54,12 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 120px;
+    @media (max-width: 1024px) {
+      margin-top: 80px;
+      svg {
+        width: 46px;
+      }
+    }
     @media (max-width: 768px) {
       margin-top: 40px;
       svg {

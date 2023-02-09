@@ -7,6 +7,9 @@
   gap: 100px;
   padding-left: 149px;
 
+  @media (max-width: 1440px) {
+    padding-left: 60px;
+  }
   @media (max-width: 768px) {
     margin: 48px 0px;
     padding-left: 49px;

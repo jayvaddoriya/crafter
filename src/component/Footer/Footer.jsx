@@ -12,7 +12,7 @@ const Footer = () => {
           <p>Careers</p>
           <p>FAQa</p>
         </Col>
-        <Col xxl={5} xl={6} lg={6} md={6}>
+        <Col xxl={5} xl={6} lg={7} md={6}>
           <h5>Help & Resources</h5>
           <p>Help Centre</p>
           <p>Careers</p>

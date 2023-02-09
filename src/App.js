@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home";
 import Pricing from "./pages/Pricing/Pricing";
 import UseCases from "./pages/UseCases/UseCases";
 import Features from "./pages/Features/Features";
+import ScheduleNow from "./pages/ScheduleNow/ScheduleNow";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/useCases" element={<UseCases />} />
+          <Route path="/scheduleNow" element={<ScheduleNow />} />
         </Route>
       </Routes>
     </div>

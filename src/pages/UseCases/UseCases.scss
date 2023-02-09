@@ -1,0 +1,19 @@
+@import "../../styles/globle.scss";
+
+.usecases-container {
+  display: flex;
+  flex-direction: column;
+  margin: 61px 0px;
+  gap: 100px;
+  padding-left: 149px;
+
+  @media (max-width: 768px) {
+    margin: 48px 0px;
+    padding-left: 49px;
+    gap: 60px;
+  }
+
+  @media (max-width: 425px) {
+    padding: 0px 24px;
+  }
+}

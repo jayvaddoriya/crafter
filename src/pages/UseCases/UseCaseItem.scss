@@ -1,0 +1,93 @@
+@import "../../styles/globle.scss";
+
+.usecase-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  @media (max-width: 768px) {
+    font-size: 10px;
+    gap: 80px;
+}
+@media (max-width: 425px) {
+    font-size: 16px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .usecase-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 72px;
+    @media (max-width: 768px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 425px) { 
+      margin: 0;
+      gap: 16px;
+    }
+
+    .usecase-title {
+      font-weight: 700;
+      color: #8c0019;
+      font-size: 30px;
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    .usecase-topic-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .usecase-topic-title {
+        font-weight: 700;
+      }
+      @media (max-width: 425px) {
+        gap: 10px;
+      }
+    }
+  }
+  .usecase-gif-container {
+    background-color: #f1efef;
+    border-radius: 56px 0px 0px 56px;
+    padding: 48px 40px 48px 0px;
+    display: flex;
+    height: fit-content;
+
+    @media (max-width: 768px) {
+      max-width: 350px;
+      padding: 18px 16px 18px 0px;
+      border-radius: 20px 0px 0px 20px;
+    }
+    @media (max-width: 425px) {
+      padding: 0;
+      margin: auto;
+      border-radius: 20px 0px 0px 20px;
+    }
+    .usecase-gif {
+      border: 0.5px solid rgba(137, 137, 137, 0.61);
+      filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+      transform: translate(-80px, 0px);
+      max-width: 700px;
+      object-fit: contain;
+
+      @media (max-width: 1440px) {
+        max-width: 600px;
+      }
+      @media (max-width: 1024px) {
+        max-width: 500px;
+      }
+      @media (max-width: 768px) {
+        max-width: 350px;
+        transform: translate(-40px, 0px);
+      }
+      @media (max-width: 425px) {
+        max-width: 350px;
+        transform: unset;
+      }
+    }
+  }
+}

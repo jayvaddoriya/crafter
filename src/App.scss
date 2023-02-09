@@ -11,13 +11,14 @@
   background-color: $primaryColor;
   border-radius: 10px;
 }
-// .ant-drawer {
-//   top: 106px !important;
-//   height: 100%;
-// }
-// .ant-drawer-body {
-//   padding: 0 !important;
-// }
-// .ant-drawer-content-wrapper {
-//   height: 100% !important;
-// }
+.ant-drawer {
+  top: 104px !important;
+  height: 100%;
+}
+.ant-drawer-body {
+  padding: 0 !important;
+}
+.ant-drawer-content-wrapper {
+  box-shadow: none !important;
+  height: 100% !important;
+}

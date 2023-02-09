@@ -20,6 +20,9 @@
   .logo {
     display: flex;
     align-items: center;
+    a {
+      display: flex;
+    }
     @media (max-width: 425px) {
       img {
         width: 120px;
@@ -44,10 +47,12 @@
       color: $blackColor;
       font-weight: 500 !important;
       font-size: 24px !important;
+      transition: all 0.5s ease-in-out;
       @media (max-width: 1024px) {
         font-size: 22px !important;
       }
       &:hover {
+        transform: translateX(-5px);
         color: $primaryColor;
         font-weight: 500 !important;
       }
@@ -56,8 +61,14 @@
       font-weight: 500 !important;
       font-size: 24px !important;
       color: $primaryColor;
+      transition: all 0.5s ease-in-out;
       @media (max-width: 1024px) {
         font-size: 22px !important;
+      }
+      &:hover {
+        transform: translateX(-5px);
+        color: $primaryColor;
+        font-weight: 500 !important;
       }
     }
     @media (max-width: 768px) {
@@ -65,32 +76,56 @@
     }
   }
 }
-// .drawerMenu {
-//   display: none;
-//   padding: 0 44px !important;
-//   .mobileNavLinks {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     .navLink {
-//       color: $blackColor;
-//       font-weight: 500 !important;
-//       font-size: 24px !important;
-//       border-bottom: 2px solid #eeeeee;
-//       height: 50px;
-//       margin-top: 16px;
-//       &:hover {
-//         color: $primaryColor !important;
-//         font-weight: 500 !important;
-//       }
-//     }
-//     .activeClassName {
-//       font-weight: 500 !important;
-//       font-size: 24px !important;
-//       color: $primaryColor;
-//       border-bottom: 2px solid #eeeeee;
-//       height: 50px;
-//       margin-top: 16px;
-//     }
-//   }
-// }
+.drawerMenu {
+  padding: 0 44px !important;
+  .mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .navLink {
+      color: $blackColor;
+      font-weight: 500 !important;
+      font-size: 24px !important;
+      border-bottom: 2px solid #eeeeee;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover {
+        color: $primaryColor !important;
+        font-weight: 500 !important;
+      }
+    }
+    .activeClassName {
+      font-weight: 500 !important;
+      font-size: 24px !important;
+      color: $primaryColor;
+      border-bottom: 2px solid #eeeeee;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .dropDownAndLogin {
+    background-color: #f8f8f8;
+    padding: 20px 44px;
+    margin-top: 20px;
+    .selectDown {
+      border-bottom: 2px solid #eeeeee;
+      div {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f8f8f8;
+        border: none !important;
+        font-family: $primary-font;
+        font-weight: 500 !important;
+        font-size: 28px;
+        line-height: 33px;
+        color: $textColor !important;
+      }
+    }
+  }
+}

@@ -1,8 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import "./navHeader.scss";
 
 const NavHeader = () => {
+  const navigate = useNavigate();
+  const handleOnClick = () => {
+    navigate("/scheduleNow");
+  };
   return (
     <div className="navHeader">
       <svg
@@ -18,7 +23,7 @@ const NavHeader = () => {
         />
       </svg>
       <div className="innerDiv">
-        <Button title="Schedule now" />
+        <Button title="Schedule now" onClick={handleOnClick} />
       </div>
     </div>
   );

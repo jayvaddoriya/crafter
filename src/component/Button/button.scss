@@ -75,3 +75,8 @@
     }
   }
 }
+.responsiveBtn {
+  @media (max-width: 425px) {
+    justify-content: space-between;
+  }
+}

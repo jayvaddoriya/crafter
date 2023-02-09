@@ -62,9 +62,10 @@ const Navbar = () => {
           </NavLink>
         </div>
         <div className="allNavLinks">
-          {linksItem.map((item) => (
+          {linksItem.map((item, index) => (
             <NavLink
               exact
+              key={index}
               to={item.to}
               className={({ isActive }) =>
                 isActive ? "activeClassName" : "navLink"
@@ -114,10 +115,11 @@ const Navbar = () => {
         open={open}
       >
         <div className="mobileNavLinks">
-          {linksItem.map((item) => (
+          {linksItem.map((item, index) => (
             <NavLink
               exact
               to={item.to}
+              key={index}
               onClick={handleOnLink}
               className={({ isActive }) =>
                 isActive ? "activeClassName" : "navLink"

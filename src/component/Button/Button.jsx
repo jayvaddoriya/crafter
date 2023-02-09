@@ -2,11 +2,15 @@ import React from "react";
 import { Button as AntdButton } from "antd";
 import "./button.scss";
 
-const Button = ({ type, title, htmlType }) => {
+const Button = ({ type, title, htmlType, onClick, responsiveBtn }) => {
   switch (type) {
     case "secondary":
       return (
-        <AntdButton className="button secondaryBtn">
+        <AntdButton
+          onClick={onClick}
+          htmlType={htmlType}
+          className={`button secondaryBtn ${responsiveBtn}`}
+        >
           {title}
           <svg
             width="44"
@@ -24,7 +28,11 @@ const Button = ({ type, title, htmlType }) => {
       );
     case "primaryBig":
       return (
-        <AntdButton htmlType={htmlType} className="button primaryBigBtn">
+        <AntdButton
+          htmlType={htmlType}
+          className="button primaryBigBtn"
+          onClick={onClick}
+        >
           {title}
           <svg
             width="48"
@@ -42,7 +50,11 @@ const Button = ({ type, title, htmlType }) => {
       );
     default:
       return (
-        <AntdButton htmlType={htmlType} className="button primaryBtn">
+        <AntdButton
+          htmlType={htmlType}
+          className="button primaryBtn"
+          onClick={onClick}
+        >
           {title}
           <svg
             width="32"

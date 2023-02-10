@@ -11,10 +11,13 @@
     padding: 0 30px;
   }
   .herosection {
-    padding: 100px 190px;
+    padding: 100px 0px;
     text-align: center;
     @media (max-width: 1440px) {
       padding: 100px 0px;
+    }
+    @media (max-width: 425px) {
+      padding: 68px 0px;
     }
     h2 {
       font-family: $secondary-font;
@@ -61,6 +64,7 @@
       line-height: 34px;
       color: $textColor;
       margin: 50px 20px;
+      padding: 0 67px;
       @media (max-width: 1440px) {
         font-size: 22px;
       }
@@ -71,6 +75,7 @@
         font-size: 20px;
         line-height: 27px;
         margin: 14px 0px 50px;
+        padding: 0;
       }
       @media (max-width: 425px) {
         font-size: 14px;

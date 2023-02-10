@@ -2,6 +2,9 @@
 
 .footer {
   padding: 120px 216px 73px 216px;
+  .dd-input {
+    display: none;
+  }
   @media (max-width: 1440px) {
     padding: 100px 100px 73px 100px;
   }
@@ -10,6 +13,33 @@
   }
   @media (max-width: 768px) {
     padding: 40px 50px 40px 50px;
+  }
+
+  @media (max-width: 480px) {
+    .dd-input + label {
+      display: flex;
+      border-bottom: 1px solid rgba(137, 137, 137, 0.17);
+      margin-top: 10px;
+      position: relative;
+      ::after {
+        content: "\002B";
+        position: absolute;
+        right: 0;
+        transform: translate(-50%);
+      }
+    }
+    .dd-input:checked + label {
+      margin-bottom: 20px;
+      ::after {
+        content: "\2212";
+      }
+    }
+    .dd-input ~ p {
+      display: none;
+    }
+    .dd-input:checked ~ p {
+      display: block;
+    }
   }
   background-color: $whiteColor;
   border-top: 2px solid #eeeeee;
@@ -33,7 +63,6 @@
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 25px;
-    transition: all 0.5s ease-in-out;
     font-family: $primary-font !important;
     cursor: pointer;
     &:hover {
@@ -54,6 +83,9 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 120px;
+    svg {
+      width: 56px;
+    }
     @media (max-width: 1024px) {
       margin-top: 80px;
       svg {

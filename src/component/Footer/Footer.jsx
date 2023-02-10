@@ -1,24 +1,34 @@
 import { Col, Row } from "antd";
 import React from "react";
+import MediumLogo from "../../assets/svg/components/MediumLogo";
 import "./footer.scss";
 
 const Footer = () => {
   return (
     <div className="footer">
       <Row>
-        <Col xxl={5} xl={5} lg={5} md={5}>
-          <h5>Company</h5>
+        <Col xxl={5} xl={5} lg={5} md={5} xs={24} className="footer-menu">
+          <input type="checkbox" id="company" className="dd-input" />
+          <label htmlFor="company">
+            <h5>Company</h5>
+          </label>
           <p>News & Media</p>
           <p>Careers</p>
-          <p>FAQa</p>
+          <p>FAQ</p>
         </Col>
-        <Col xxl={5} xl={6} lg={7} md={6}>
-          <h5>Help & Resources</h5>
+        <Col xxl={5} xl={6} lg={7} md={6} xs={24} className="footer-menu">
+          <input type="checkbox" id="help" className="dd-input" />
+          <label htmlFor="help">
+            <h5>Help & Resources</h5>
+          </label>
           <p>Help Centre</p>
-          <p>Careers</p>
+          <p>Contact support</p>
         </Col>
-        <Col xxl={6} xl={6} lg={7} md={6}>
-          <h5>Legal Information</h5>
+        <Col xxl={6} xl={6} lg={7} md={6} xs={24} className="footer-menu">
+          <input type="checkbox" id="legal" className="dd-input" />
+          <label htmlFor="legal">
+            <h5>Legal Information</h5>
+          </label>
           <p>Privacy Policy</p>
           <p>Acceptable Use Policy</p>
           <p>Terms of Service</p>
@@ -26,18 +36,6 @@ const Footer = () => {
       </Row>
       <div className="lastFooter">
         <div className="footerIcons">
-          <svg
-            width="56"
-            height="56"
-            viewBox="0 0 56 56"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M27.9999 0.399902C12.7815 0.399902 0.399902 12.7803 0.399902 27.9999C0.399902 43.2195 12.7815 55.5999 27.9999 55.5999C43.2183 55.5999 55.5999 43.2195 55.5999 27.9999C55.5999 12.7803 43.2183 0.399902 27.9999 0.399902ZM19.5999 39.9999H14.7999V21.9999H19.5999V39.9999ZM17.1999 18.3999C15.8739 18.3999 14.7999 17.3259 14.7999 15.9999C14.7999 14.6739 15.8739 13.5999 17.1999 13.5999C18.5259 13.5999 19.5999 14.6739 19.5999 15.9999C19.5999 17.3259 18.5259 18.3999 17.1999 18.3999ZM42.3999 39.9999H37.5999V33.9999V30.9999C37.5999 28.6899 35.7099 26.7999 33.3999 26.7999C31.0899 26.7999 29.1999 28.6899 29.1999 30.9999V39.9999H24.3999V21.9999H29.1999V24.1791C30.6015 22.8327 32.5023 21.9999 34.5999 21.9999C38.9079 21.9999 42.3999 25.4919 42.3999 29.7999V39.9999Z"
-              fill="#8C0019"
-            />
-          </svg>
           <svg
             width="56"
             height="56"
@@ -50,6 +48,19 @@ const Footer = () => {
               fill="#8C0019"
             />
           </svg>
+          <svg
+            width="56"
+            height="56"
+            viewBox="0 0 56 56"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M27.9999 0.399902C12.7815 0.399902 0.399902 12.7803 0.399902 27.9999C0.399902 43.2195 12.7815 55.5999 27.9999 55.5999C43.2183 55.5999 55.5999 43.2195 55.5999 27.9999C55.5999 12.7803 43.2183 0.399902 27.9999 0.399902ZM19.5999 39.9999H14.7999V21.9999H19.5999V39.9999ZM17.1999 18.3999C15.8739 18.3999 14.7999 17.3259 14.7999 15.9999C14.7999 14.6739 15.8739 13.5999 17.1999 13.5999C18.5259 13.5999 19.5999 14.6739 19.5999 15.9999C19.5999 17.3259 18.5259 18.3999 17.1999 18.3999ZM42.3999 39.9999H37.5999V33.9999V30.9999C37.5999 28.6899 35.7099 26.7999 33.3999 26.7999C31.0899 26.7999 29.1999 28.6899 29.1999 30.9999V39.9999H24.3999V21.9999H29.1999V24.1791C30.6015 22.8327 32.5023 21.9999 34.5999 21.9999C38.9079 21.9999 42.3999 25.4919 42.3999 29.7999V39.9999Z"
+              fill="#8C0019"
+            />
+          </svg>
+          <MediumLogo fill="#8C0019" />
         </div>
         <div className="companyTag">
           <p>Crafter © 2023</p>

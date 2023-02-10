@@ -54,6 +54,9 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 120px;
+    svg{
+      width: 56px;
+    }
     @media (max-width: 1024px) {
       margin-top: 80px;
       svg {

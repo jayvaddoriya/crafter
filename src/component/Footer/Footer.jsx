@@ -8,18 +8,27 @@ const Footer = () => {
     <div className="footer">
       <Row>
         <Col xxl={5} xl={5} lg={5} md={5} xs={24} className="footer-menu">
-          <h5>Company</h5>
+          <input type="checkbox" id="company" className="dd-input" />
+          <label htmlFor="company">
+            <h5>Company</h5>
+          </label>
           <p>News & Media</p>
           <p>Careers</p>
           <p>FAQ</p>
         </Col>
         <Col xxl={5} xl={6} lg={7} md={6} xs={24} className="footer-menu">
-          <h5>Help & Resources</h5>
+          <input type="checkbox" id="help" className="dd-input" />
+          <label htmlFor="help">
+            <h5>Help & Resources</h5>
+          </label>
           <p>Help Centre</p>
           <p>Contact support</p>
         </Col>
         <Col xxl={6} xl={6} lg={7} md={6} xs={24} className="footer-menu">
-          <h5>Legal Information</h5>
+          <input type="checkbox" id="legal" className="dd-input" />
+          <label htmlFor="legal">
+            <h5>Legal Information</h5>
+          </label>
           <p>Privacy Policy</p>
           <p>Acceptable Use Policy</p>
           <p>Terms of Service</p>

@@ -15,12 +15,13 @@
     padding: 40px 50px 40px 50px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 425px) {
     .dd-input + label {
       display: flex;
       border-bottom: 1px solid rgba(137, 137, 137, 0.17);
-      margin-top: 10px;
+      margin-top: 25px;
       position: relative;
+      transition: all 0.3s ease-in-out;
       ::after {
         content: "\002B";
         position: absolute;
@@ -112,6 +113,9 @@
         font-family: $primary-font !important;
         @media (max-width: 768px) {
           font-size: 15px;
+        }
+        @media (max-width: 425px) {
+          margin-bottom: 0 !important;
         }
       }
     }

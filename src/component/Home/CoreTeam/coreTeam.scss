@@ -1,77 +1,131 @@
 @import "../../../styles/globle.scss";
 .coreTeam {
-  padding-top: 240px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-color: $primaryColor;
+  border-radius: 156px 0 156px 0;
   @media (max-width: 1024px) {
     padding-top: 200px;
   }
-  @media (max-width: 768px) {
-    padding-top: 62px;
+  @media (max-width: 834px) {
+    margin-top: 114px;
+    margin-bottom: 114px;
+    border-radius: 50px 0 50px 0;
   }
-  @media (max-width: 425px) {
-    padding-top: 0px;
+  .container {
+    @media (max-width: 425px) {
+      max-width: 425px;
+      padding-left: 20px;
+    }
   }
   .webAndMobileImg {
-    background-color: $primaryColor;
-    padding: $sectionPadding;
-    margin-right: 30px;
-    margin-bottom: 200px;
-    border-radius: 156px 0 156px 0;
-    @media (max-width: 1440px) {
-      padding: 0 100px;
-    }
+    display: flex;
+    position: relative;
+    padding-bottom: 60px;
     @media (max-width: 1024px) {
-      padding: 0 60px;
-      margin-right: 24px;
-      margin-bottom: 140px;
-    }
-    @media (max-width: 768px) {
-      margin-right: 0px;
-      border-radius: 50px 0 50px 0;
-      margin-bottom: 120px;
+      padding-bottom: 20px;
     }
     @media (max-width: 425px) {
-      margin-right: 0px;
-      border-radius: 30px 0 30px 0;
-      margin-bottom: 50px;
-      padding: 0 30px;
+      overflow-x: clip;
+    }
+    .divoo {
+      .teamMobileImg {
+        width: 27%;
+        position: relative;
+        margin-top: -94px;
+        right: 0;
+        z-index: 999;
+        @media (max-width: 1024px) {
+          margin-top: -256px;
+        }
+        @media (max-width: 425px) {
+          width: 30%;
+        }
+      }
+      .imageofimage {
+        position: absolute;
+        z-index: 1;
+        top: -72px;
+        left: 17.5px;
+        width: 25%;
+        border-radius: 34px;
+        @media (max-width: 1440px) {
+          top: -74px;
+        }
+        @media (max-width: 1024px) {
+          top: -243px;
+          left: 10px;
+        }
+        @media (max-width: 834px) {
+          top: -246px;
+          left: 6px;
+          border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+          top: -246px;
+          left: 6px;
+          border-radius: 18px;
+        }
+        @media (max-width: 425px) {
+          top: -223px;
+          left: 25px;
+          border-radius: 8px;
+          width: 26%;
+        }
+      }
     }
     .coreTeamMobileImg {
-      width: 100%;
-      margin-top: -200px;
-      @media (max-width: 768px) {
-        margin-top: -100px;
+      position: absolute;
+      top: -160px;
+      right: 0;
+      border-radius: 20px;
+      @media (max-width: 1440px) {
+        top: -149px;
+        right: 0;
+        width: 77%;
+      }
+      @media (max-width: 1024px) {
+        top: -295px;
+        right: 0;
+        width: 77%;
       }
       @media (max-width: 425px) {
-        margin-top: -50px;
+        top: -275px;
+        right: -66px;
+        width: 92%;
       }
     }
   }
-  h1 {
-    font-family: $extra-font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 82px;
-    color: $whiteColor;
-    @media (max-width: 1024px) {
-      font-size: 44px;
-    }
-    @media (max-width: 768px) {
-      font-size: 30px;
-      line-height: 35px;
-    }
-    @media (max-width: 425px) {
-      font-size: 16px;
-      line-height: 22px;
-    }
+}
+h1 {
+  font-family: $extra-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 82px;
+  color: $whiteColor;
+  @media (max-width: 1024px) {
+    font-size: 44px;
   }
-  .btnDiv {
-    padding: 35px 0 80px 0;
-    @media (max-width: 768px) {
-      padding: 35px 0 50px 0;
-    }
-    @media (max-width: 425px) {
-      padding: 25px 0 30px 0;
-    }
+  @media (max-width: 834px) {
+    font-size: 36px;
+    line-height: 35px;
+  }
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  @media (max-width: 425px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.btnDiv {
+  padding: 35px 0 80px 0;
+  @media (max-width: 768px) {
+    padding: 35px 0 50px 0;
+  }
+  @media (max-width: 425px) {
+    padding: 25px 0 30px 0;
   }
 }

@@ -1,10 +1,17 @@
+import { Col, Row } from "antd";
 import React from "react";
 import "./UseCaseItem.scss";
 
 const UseCaseItem = ({ useCase }) => {
   return (
-    <div className="usecase-container">
-      <div className="usecase-text-container">
+    <Row className="usecase-container">
+      <Col
+        xxl={10}
+        xl={11}
+        lg={11}
+        md={11}
+        className="usecase-text-container container"
+      >
         <div className="usecase-title">{useCase.title}</div>
         {useCase.description && (
           <div className="usecase-text">{useCase.description}</div>
@@ -17,11 +24,11 @@ const UseCaseItem = ({ useCase }) => {
             </div>
           );
         })}
-      </div>
-      <div className="usecase-gif-container">
+      </Col>
+      <Col xxl={11} xl={11} lg={11} md={11} className="usecase-gif-container">
         <img src={useCase.gif} alt="" className="usecase-gif" />
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 

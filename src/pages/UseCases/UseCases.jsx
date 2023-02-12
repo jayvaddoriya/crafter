@@ -5,7 +5,7 @@ import "./UseCases.scss";
 
 const UseCases = () => {
   return (
-    <div className="usecases-container">
+    <div className="usecases-container  ">
       {useCaseData.map((useCase) => {
         return <UseCaseItem useCase={useCase} />;
       })}

@@ -4,17 +4,24 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  padding: 120px;
-
-  @media (max-width: 768px) {
-    margin: 5%;
-    padding: 0;
-    gap: 60px;
+  margin: 133px auto;
+  @media (max-width: 1440px) {
+    margin: 113px auto;
   }
-
+  @media (max-width: 1024px) {
+    margin: 93px auto;
+  }
+  @media (max-width: 834px) {
+    margin: 73px auto;
+    gap: 73px;
+  }
+  @media (max-width: 768px) {
+    margin: 73px auto;
+    gap: 73px;
+  }
   @media (max-width: 425px) {
-    margin: 7%;
-    padding: 0;
+    margin: 53px auto;
+    gap: 53px;
   }
 }
 
@@ -24,14 +31,15 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  @media (max-width: 1024px) {
-    font-size: 14px;
+  @media (max-width: 1440px) {
+    font-size: 16px;
+  }
+  @media (max-width: 834px) {
+    font-size: 12px;
+    gap: 16px;
   }
   @media (max-width: 768px) {
-    font-size: 10px;
-    gap: 30px;
-  }
-  @media (max-width: 425px) {
-    font-size: 16px;
+    font-size: 12px;
+    gap: 16px;
   }
 }

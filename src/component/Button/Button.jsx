@@ -2,14 +2,21 @@ import React from "react";
 import { Button as AntdButton } from "antd";
 import "./button.scss";
 
-const Button = ({ type, title, htmlType, onClick, responsiveBtn }) => {
+const Button = ({
+  type,
+  title,
+  htmlType,
+  onClick,
+  responsiveBtn,
+  bgChangeresponsiveBtn,
+}) => {
   switch (type) {
     case "secondary":
       return (
         <AntdButton
           onClick={onClick}
           htmlType={htmlType}
-          className={`button secondaryBtn ${responsiveBtn}`}
+          className={`button secondaryBtn ${responsiveBtn} ${bgChangeresponsiveBtn}`}
         >
           {title}
           <svg

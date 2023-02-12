@@ -1,18 +1,12 @@
 @import "../../styles/globle.scss";
 
 .footer {
-  padding: 120px 216px 73px 216px;
+  padding: 50px 0;
+  @media (max-width: 768px) {
+    padding: 30px 0;
+  }
   .dd-input {
     display: none;
-  }
-  @media (max-width: 1440px) {
-    padding: 100px 100px 73px 100px;
-  }
-  @media (max-width: 1024px) {
-    padding: 72px 60px 73px 60px;
-  }
-  @media (max-width: 768px) {
-    padding: 40px 50px 40px 50px;
   }
 
   @media (max-width: 425px) {
@@ -46,24 +40,31 @@
   border-top: 2px solid #eeeeee;
   h5 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 28px;
-    margin-bottom: 62px;
+    margin-bottom: 36px;
     font-family: $primary-font !important;
-    @media (max-width: 768px) {
-      margin-bottom: 40px;
+    @media (max-width: 834px) {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 26px;
     }
     @media (max-width: 768px) {
       font-size: 15px;
       line-height: 18px;
       margin-bottom: 26px;
     }
+    @media (max-width: 425px) {
+      font-size: 20px;
+      line-height: 18px;
+      margin-bottom: 26px;
+    }
   }
   p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 21px;
     line-height: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     font-family: $primary-font !important;
     cursor: pointer;
     &:hover {
@@ -72,6 +73,11 @@
     @media (max-width: 1024px) {
       font-size: 20px;
       line-height: 18px;
+    }
+    @media (max-width: 834px) {
+      font-size: 13px;
+      line-height: 15px;
+      margin-bottom: 16px;
     }
     @media (max-width: 768px) {
       font-size: 13px;
@@ -83,14 +89,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 120px;
+    margin-top: 68px;
     svg {
-      width: 56px;
+      width: 48px;
     }
     @media (max-width: 1024px) {
       margin-top: 80px;
       svg {
         width: 46px;
+      }
+    }
+    @media (max-width: 834px) {
+      margin-top: 40px;
+      svg {
+        width: 35px;
       }
     }
     @media (max-width: 768px) {
@@ -109,8 +121,12 @@
     .companyTag {
       p {
         font-weight: 300;
-        font-size: 24px;
+        font-size: 21px;
         font-family: $primary-font !important;
+        margin-bottom: 0 !important;
+        @media (max-width: 834px) {
+          font-size: 15px;
+        }
         @media (max-width: 768px) {
           font-size: 15px;
         }

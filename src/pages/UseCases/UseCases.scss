@@ -3,20 +3,25 @@
 .usecases-container {
   display: flex;
   flex-direction: column;
-  margin: 61px 0px;
-  gap: 100px;
-  padding-left: 149px;
-
+  gap: 133px;
+  margin: 133px auto;
   @media (max-width: 1440px) {
-    padding-left: 60px;
+    margin: 113px auto;
+  }
+  @media (max-width: 1024px) {
+    margin: 93px auto;
+    gap: 93px;
+  }
+  @media (max-width: 834px) {
+    margin: 73px auto;
+    gap: 73px;
   }
   @media (max-width: 768px) {
-    margin: 48px 0px;
-    padding-left: 49px;
-    gap: 60px;
+    margin: 73px auto;
+    gap: 73px;
   }
-
   @media (max-width: 425px) {
-    padding: 0px 24px;
+    margin: 51px auto;
+    gap: 53px;
   }
 }

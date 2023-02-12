@@ -12,9 +12,9 @@ const ScheduleNow = () => {
     form.resetFields();
   };
   return (
-    <div className="scheduleNow">
-      <Row justify="center">
-        <Col xxl={12} xl={12}>
+    <div className="scheduleNow container">
+      <Row>
+        <Col xxl={12} xl={12} lg={24} md={24} sm={24}>
           <div className="headings">
             <h2>Get in touch with</h2>
             <h1>our expert</h1>
@@ -22,7 +22,7 @@ const ScheduleNow = () => {
             <p>We’d love to hear from you</p>
           </div>
         </Col>
-        <Col xxl={12} xl={12}>
+        <Col xxl={12} xl={12} lg={24} md={24}>
           <div className="formDivMain">
             <h2>Let’s get to know you</h2>
             <p>*Required fields</p>
@@ -32,7 +32,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter your first name",
                   },
                 ]}
               >
@@ -43,7 +43,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter your last name",
                   },
                 ]}
               >
@@ -54,7 +54,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter your email",
                   },
                 ]}
               >
@@ -65,7 +65,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter your job title",
                   },
                 ]}
               >
@@ -76,7 +76,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter your phone number",
                   },
                 ]}
               >
@@ -87,7 +87,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter your company",
                   },
                 ]}
               >
@@ -98,7 +98,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please select the country",
                   },
                 ]}
               >
@@ -110,7 +110,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter movie studio size",
                   },
                 ]}
               >
@@ -122,7 +122,7 @@ const ScheduleNow = () => {
                 rules={[
                   {
                     required: true,
-                    message: false,
+                    message: "Please enter about your self",
                   },
                 ]}
               >

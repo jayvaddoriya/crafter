@@ -1,4 +1,4 @@
-import { Form, Input } from "antd";
+import { Col, Form, Input, Row } from "antd";
 import { useForm } from "antd/es/form/Form";
 import React from "react";
 import Button from "../../Button/Button";
@@ -7,11 +7,11 @@ import "./heroSection.scss";
 const HeroSection = () => {
   const [form] = useForm();
   const handleOnSubmit = (values) => {
-    console.log("hi");
+    console.log(values);
     form.resetFields();
   };
   return (
-    <div className="paddingdiv">
+    <div className="container">
       <div className="herosection">
         <h2>Welcome to</h2>
         <h1>Crafter Crews</h1>
@@ -23,22 +23,30 @@ const HeroSection = () => {
           and more flexibly than ever before.
         </p>
         <div className="inputAndBtn">
-          <Form className="formdiv" form={form} onFinish={handleOnSubmit}>
-            <Form.Item
-              name="email"
-              rules={[
-                {
-                  required: true,
-                  message: "Please input your username!",
-                },
-              ]}
-            >
-              <Input placeholder="Business email address*" />
-            </Form.Item>
-            <Form.Item>
-              <Button title="Try Crafter" htmlType="submit" type="secondary" />
-            </Form.Item>
-          </Form>
+          <Row justify="center">
+            <Col xxl={24}>
+              <Form className="formdiv" form={form} onFinish={handleOnSubmit}>
+                <Form.Item
+                  name="email"
+                  rules={[
+                    {
+                      required: true,
+                      message: "Please input your username!",
+                    },
+                  ]}
+                >
+                  <Input placeholder="Business email address*" />
+                </Form.Item>
+                <Form.Item>
+                  <Button
+                    title="Try Crafter"
+                    htmlType="submit"
+                    type="secondary"
+                  />
+                </Form.Item>
+              </Form>
+            </Col>
+          </Row>
         </div>
       </div>
     </div>

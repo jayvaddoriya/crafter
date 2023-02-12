@@ -13,12 +13,11 @@
 }
 
 .primaryBtn {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 18px;
-  height: 42px;
+  height: 36px;
   background-color: $whiteColor !important;
   border: 1px solid $primaryColor !important;
-  margin-left: 33px !important;
   &:hover {
     color: $primaryColor !important;
   }
@@ -26,8 +25,8 @@
 .primaryBigBtn {
   font-size: 15px;
   line-height: 18px;
-  height: 64px;
-  font-size: 22.5px;
+  height: 55px;
+  font-size: 20px;
   line-height: 26px;
   background-color: $whiteColor !important;
   border: 1px solid $primaryColor !important;
@@ -52,17 +51,17 @@
 .secondaryBtn {
   background-color: #008c72;
   border: 1px solid #008c72;
-  height: 73px;
-  font-size: 30px;
+  height: 63px;
+  font-size: 21px;
   line-height: 35px;
   color: $whiteColor;
   padding: 0px 50px;
   &:hover {
     color: $whiteColor !important;
   }
-  @media (max-width: 768px) {
+  @m @media (max-width: 768px) {
     padding: 0px 20px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
   }
   @media (max-width: 425px) {
@@ -73,10 +72,5 @@
       position: absolute;
       right: 10px;
     }
-  }
-}
-.responsiveBtn {
-  @media (max-width: 425px) {
-    justify-content: space-between;
   }
 }

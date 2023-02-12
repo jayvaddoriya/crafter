@@ -5,7 +5,7 @@ import "./Features.scss";
 
 const Features = () => {
   return (
-    <div className="features-container">
+    <div className="features-container container">
       {featureData.map((feature) => {
         return <FeatureItem feature={feature} />;
       })}

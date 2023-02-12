@@ -1,23 +1,22 @@
-import { Layout } from "antd";
+import { Col, Layout, Row } from "antd";
 import { Content } from "antd/es/layout/layout";
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import NavHeader from "../NavHeader/NavHeader";
+import "../../styles/globle.scss";
 
 const LayoutProvider = () => {
   return (
-    <div>
-      <Layout>
-        <NavHeader />
-        <Navbar />
-        <Content style={{ background: "#fff" }}>
-          <Outlet />
-        </Content>
-        <Footer />
-      </Layout>
-    </div>
+    <>
+      <NavHeader />
+      <Navbar />
+      <Content style={{ background: "#fff" }}>
+        <Outlet />
+      </Content>
+      <Footer />
+    </>
   );
 };
 

@@ -4,14 +4,8 @@ import "./UseCaseItem.scss";
 
 const UseCaseItem = ({ useCase }) => {
   return (
-    <Row className="usecase-container">
-      <Col
-        xxl={10}
-        xl={11}
-        lg={11}
-        md={11}
-        className="usecase-text-container container"
-      >
+    <Row className="usecase-container container" justify="space-between">
+      <Col xxl={9} xl={11} lg={11} md={11} className="usecase-text-container ">
         <div className="usecase-title">{useCase.title}</div>
         {useCase.description && (
           <div className="usecase-text">{useCase.description}</div>

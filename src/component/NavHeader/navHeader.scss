@@ -1,6 +1,6 @@
 @import "../../styles/globle.scss";
 .navHeader {
-  height: 93px;
+  height: 80px;
   position: relative;
   background-color: #fbf7f8;
   .container {
@@ -31,13 +31,21 @@
     .sideDiv {
       position: absolute;
       height: 100%;
-      width: 69%;
+      width: 150%;
       top: 0;
-      right: -69%;
+      right: -150%;
       background-color: $primaryColor;
+      @media (max-width: 1600px) {
+        width: 66.5%;
+        right: -66%;
+      }
       @media (max-width: 1440px) {
-        width: 23.5%;
-        right: -23%;
+        width: 50.5%;
+        right: -50%;
+      }
+      @media (max-width: 1200px) {
+        width: 42.5%;
+        right: -42%;
       }
       @media (max-width: 1024px) {
         width: 17.5%;

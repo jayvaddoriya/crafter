@@ -17,7 +17,7 @@ const Footer = () => {
             <p>Careers</p>
             <p>FAQ</p>
           </Col>
-          <Col xxl={5} xl={6} lg={6} md={6} xs={24} className="footer-menu">
+          <Col xxl={6} xl={6} lg={6} md={6} xs={24} className="footer-menu">
             <input type="checkbox" id="help" className="dd-input" />
             <label htmlFor="help">
               <h5>Help & Resources</h5>

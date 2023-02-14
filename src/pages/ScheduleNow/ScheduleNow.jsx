@@ -13,8 +13,8 @@ const ScheduleNow = () => {
   };
   return (
     <div className="scheduleNow container">
-      <Row>
-        <Col xxl={12} xl={12} lg={24} md={24} sm={24}>
+      <Row justify="space-between">
+        <Col xxl={10} xl={12} lg={8} md={24} sm={24}>
           <div className="headings">
             <h2>Get in touch with</h2>
             <h1>our expert</h1>
@@ -22,7 +22,7 @@ const ScheduleNow = () => {
             <p>We’d love to hear from you</p>
           </div>
         </Col>
-        <Col xxl={12} xl={12} lg={24} md={24}>
+        <Col xxl={13} xl={12} lg={14} md={24}>
           <div className="formDivMain">
             <h2>Let’s get to know you</h2>
             <p>*Required fields</p>

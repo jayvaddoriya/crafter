@@ -1,7 +1,7 @@
 @import "../../../styles/globle.scss";
 .coreTeam {
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 120px;
   background-color: $primaryColor;
   border-radius: 156px 0 156px 0;
   @media (max-width: 1024px) {
@@ -12,6 +12,16 @@
     margin-bottom: 114px;
     border-radius: 50px 0 50px 0;
   }
+  @media (max-width: 425px) {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+  @media (max-width: 320px) {
+    margin-bottom: 40px;
+  }
   .container {
     @media (max-width: 425px) {
       max-width: 425px;
@@ -21,18 +31,21 @@
   .webAndMobileImg {
     display: flex;
     position: relative;
-    padding-bottom: 60px;
+    padding-bottom: 24px;
     @media (max-width: 1024px) {
       padding-bottom: 20px;
     }
     @media (max-width: 425px) {
       overflow-x: clip;
     }
+    @media (max-width: 320px) {
+      padding-bottom: 0;
+    }
     .divoo {
       .teamMobileImg {
-        width: 27%;
+        width: 26%;
         position: relative;
-        margin-top: -94px;
+        margin-top: -90px;
         right: 0;
         z-index: 999;
         @media (max-width: 1024px) {
@@ -41,19 +54,27 @@
         @media (max-width: 425px) {
           width: 30%;
         }
+        @media (max-width: 320px) {
+          top: -51px;
+        }
       }
       .imageofimage {
         position: absolute;
         z-index: 1;
         top: -72px;
         left: 17.5px;
-        width: 25%;
+        width: 24%;
         border-radius: 34px;
         @media (max-width: 1440px) {
           top: -74px;
         }
+        @media (max-width: 1200px) {
+          top: -76px;
+          left: 10.5px;
+          border-radius: 14px;
+        }
         @media (max-width: 1024px) {
-          top: -243px;
+          top: -246px;
           left: 10px;
         }
         @media (max-width: 834px) {
@@ -72,6 +93,18 @@
           border-radius: 8px;
           width: 26%;
         }
+        @media (max-width: 375px) {
+          top: -194px;
+          left: 25px;
+          border-radius: 8px;
+          width: 26%;
+        }
+        @media (max-width: 320px) {
+          top: -212px;
+          left: 24px;
+          border-radius: 8px;
+          width: 26%;
+        }
       }
     }
     .coreTeamMobileImg {
@@ -79,6 +112,7 @@
       top: -160px;
       right: 0;
       border-radius: 20px;
+      width: 78%;
       @media (max-width: 1440px) {
         top: -149px;
         right: 0;
@@ -94,6 +128,16 @@
         right: -66px;
         width: 92%;
       }
+      @media (max-width: 375px) {
+        top: -241px;
+        right: -66px;
+        width: 92%;
+      }
+      @media (max-width: 320px) {
+        top: -254px;
+        right: -66px;
+        width: 92%;
+      }
     }
   }
 }
@@ -101,19 +145,19 @@ h1 {
   font-family: $extra-font;
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
-  line-height: 82px;
+  font-size: 42px;
+  line-height: 66px;
   color: $whiteColor;
   @media (max-width: 1024px) {
-    font-size: 44px;
+    font-size: 32px;
   }
   @media (max-width: 834px) {
-    font-size: 36px;
-    line-height: 35px;
+    font-size: 28px;
+    line-height: 25px;
   }
   @media (max-width: 768px) {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 26px;
+    line-height: 22px;
   }
   @media (max-width: 425px) {
     font-size: 16px;
@@ -121,11 +165,11 @@ h1 {
   }
 }
 .btnDiv {
-  padding: 35px 0 80px 0;
+  padding: 26px 0 44px 0;
   @media (max-width: 768px) {
-    padding: 35px 0 50px 0;
+    padding: 24px 0 34px 0;
   }
   @media (max-width: 425px) {
-    padding: 25px 0 30px 0;
+    padding: 14px 0 28px 0;
   }
 }

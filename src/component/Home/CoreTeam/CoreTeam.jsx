@@ -11,22 +11,20 @@ const CoreTeam = () => {
     <>
       <div className="coreTeam">
         <div className="webAndMobileImg container">
-          <div>
-            <div className="divoo">
-              <img
-                className="teamMobileImg"
-                src={TeamMobileWeb}
-                alt="coreTeamMobileImg"
-              />
-
-              <img className="imageofimage" src={gif} alt="coreTeamMobileImg" />
-            </div>
+          <div className="divoo">
             <img
-              className="coreTeamMobileImg"
-              src={coreTeamMobileWeb}
+              className="teamMobileImg"
+              src={TeamMobileWeb}
               alt="coreTeamMobileImg"
             />
+
+            <img className="imageofimage" src={gif} alt="coreTeamMobileImg" />
           </div>
+          <img
+            className="coreTeamMobileImg"
+            src={coreTeamMobileWeb}
+            alt="coreTeamMobileImg"
+          />
         </div>
         <div className="container">
           <Row>

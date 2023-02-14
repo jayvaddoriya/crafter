@@ -5,13 +5,13 @@ import "./FeatureItem.scss";
 const FeatureItem = ({ feature }) => {
   return (
     <Row className="feature-container">
-      <Col xxl={11} xl={11} lg={11} md={11} className="feature-text-container">
+      <Col xxl={8} xl={9} lg={9} md={9} className="feature-text-container">
         <div className="feature-title">{feature.title}</div>
         {feature.description.map((text) => {
           return <div className="feature-text">{text}</div>;
         })}
       </Col>
-      <Col xxl={12} xl={12} lg={12} md={12} className="feature-gif-container">
+      <Col xxl={14} xl={13} lg={13} md={13} className="feature-gif-container">
         <img src={feature.gif} alt="" className="feature-gif" />
       </Col>
     </Row>

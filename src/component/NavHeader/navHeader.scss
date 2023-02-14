@@ -9,6 +9,21 @@
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
+    font-size: $primary-font;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    .tryCrafterDiv {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
     > svg {
       @media (max-width: 1024px) {
         right: 32%;
@@ -31,9 +46,9 @@
     .sideDiv {
       position: absolute;
       height: 100%;
-      width: 150%;
+      width: 154%;
       top: 0;
-      right: -150%;
+      right: -154%;
       background-color: $primaryColor;
       @media (max-width: 1600px) {
         width: 66.5%;

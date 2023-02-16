@@ -159,6 +159,9 @@
       @media (max-width: 1024px) {
         font-size: 18px !important;
       }
+      @media (max-width: 768px) {
+        height: 60px;
+      }
     }
   }
   .dropDownAndLogin {

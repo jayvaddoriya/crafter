@@ -19,6 +19,9 @@
       justify-content: center;
       gap: 10px;
       transition: all 0.5s ease-in-out;
+      font-family: $primary-font;
+      font-size: 18px;
+      font-weight: 600;
       cursor: pointer;
       &:hover {
         color: $primaryColor;

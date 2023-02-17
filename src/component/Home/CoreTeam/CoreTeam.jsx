@@ -9,6 +9,14 @@ import { Col, Row } from "antd";
 const CoreTeam = () => {
   return (
     <>
+      <meta
+        name="description"
+        content="Crafter crews is a new and better way to communicate with all your film crew members. It’s faster, well organised and more convenient  than email or WhatsApp"
+      />
+
+      <meta property="og:title" content="Where collaboration happens" />
+
+      <title> Crafter crews | Work communication app for film crews </title>
       <div className="coreTeam">
         <div className="webAndMobileImg container">
           <div className="divoo">

@@ -4,12 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 133px;
-  margin: 133px auto;
+  margin: 100px auto;
+  margin-top: 50px;
   @media (max-width: 1440px) {
-    margin: 113px auto;
+    margin: 90px auto;
   }
   @media (max-width: 1024px) {
-    margin: 93px auto;
+    margin: 85px auto;
     gap: 93px;
   }
   @media (max-width: 834px) {

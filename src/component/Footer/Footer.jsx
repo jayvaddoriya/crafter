@@ -6,6 +6,14 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
+      <meta
+        name="description"
+        content="Crafter crews is a new and better way to communicate with all your film crew members. It’s faster, well organised and more convenient  than email or WhatsApp"
+      />
+
+      <meta property="og:title" content="Where collaboration happens" />
+
+      <title> Crafter crews | Work communication app for film crews </title>
       <div className="container">
         <Row>
           <Col xxl={5} xl={5} lg={5} md={5} xs={24} className="footer-menu">

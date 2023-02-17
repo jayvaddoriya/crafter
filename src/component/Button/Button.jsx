@@ -18,6 +18,14 @@ const Button = ({
           htmlType={htmlType}
           className={`button secondaryBtn ${responsiveBtn} ${bgChangeresponsiveBtn}`}
         >
+          <meta
+            name="description"
+            content="Crafter crews is a new and better way to communicate with all your film crew members. It’s faster, well organised and more convenient  than email or WhatsApp"
+          />
+
+          <meta property="og:title" content="Where collaboration happens" />
+
+          <title> Crafter crews | Work communication app for film crews </title>
           {title}
           <svg
             width="44"

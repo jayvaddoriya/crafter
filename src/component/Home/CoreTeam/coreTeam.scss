@@ -87,14 +87,43 @@
           left: 6px;
           border-radius: 18px;
         }
+        @media (max-width: 540px) {
+          top: -183px;
+          left: 4px;
+          border-radius: 8px;
+        }
         @media (max-width: 425px) {
           top: -223px;
           left: 25px;
           border-radius: 8px;
           width: 26%;
         }
+        @media (max-width: 412px) {
+          top: -214px;
+          left: 25px;
+          border-radius: 8px;
+          width: 26%;
+        }
+        @media (max-width: 393px) {
+          top: -204px;
+          left: 25px;
+          border-radius: 8px;
+          width: 26%;
+        }
+        @media (max-width: 390px) {
+          top: -204px;
+          left: 25px;
+          border-radius: 8px;
+          width: 26%;
+        }
         @media (max-width: 375px) {
           top: -194px;
+          left: 25px;
+          border-radius: 8px;
+          width: 26%;
+        }
+        @media (max-width: 360px) {
+          top: -184px;
           left: 25px;
           border-radius: 8px;
           width: 26%;

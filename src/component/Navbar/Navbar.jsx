@@ -4,7 +4,7 @@ import "./navbar.scss";
 import crafter from "../../assets/svg/Crafter.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
-import { Button as AntdButton, Drawer, Select } from "antd";
+import { Drawer } from "antd";
 
 const linksItem = [
   {

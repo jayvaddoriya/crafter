@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
+import Button from "../../component/Button/Button";
 import "./IntigrationItem.scss";
 
 const IntigrationItem = ({ useCase }) => {
@@ -19,6 +20,9 @@ const IntigrationItem = ({ useCase }) => {
           useCase?.description?.map((item) => (
             <div className="usecase-text">{item}</div>
           ))}
+        <div className="tryNowBtn">
+          <Button title="Try now" htmlType="submit" type="secondary" />
+        </div>
       </Col>
       <Col xxl={11} xl={11} lg={11} md={11} className="usecase-gif-container">
         <img src={useCase.gif} alt="" className="usecase-gif" />

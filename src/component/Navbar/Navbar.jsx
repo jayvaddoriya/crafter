@@ -16,6 +16,10 @@ const linksItem = [
     to: "/features",
   },
   {
+    linkName: "Integrations",
+    to: "/integrations",
+  },
+  {
     linkName: "Pricing",
     to: "/pricing",
   },
@@ -208,7 +212,7 @@ const Navbar = () => {
             </NavLink>
           ))}
         </div>
-        <div className="dropDownAndLogin">
+        {/* <div className="dropDownAndLogin">
           <Select
             className="selectDown"
             defaultValue="English (UK)"
@@ -230,7 +234,7 @@ const Navbar = () => {
           <AntdButton type="text" className="logOutBtn">
             Login
           </AntdButton>
-        </div>
+        </div> */}
         <div className="btns">
           <Button
             type="secondary"

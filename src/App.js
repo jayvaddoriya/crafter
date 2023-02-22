@@ -7,6 +7,7 @@ import Pricing from "./pages/Pricing/Pricing";
 import UseCases from "./pages/UseCases/UseCases";
 import Features from "./pages/Features/Features";
 import ScheduleNow from "./pages/ScheduleNow/ScheduleNow";
+import Intingration from "./pages/Intigrations/Intigration";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<LayoutProvider />}>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
+          <Route path="/integrations" element={<Intingration />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/useCases" element={<UseCases />} />

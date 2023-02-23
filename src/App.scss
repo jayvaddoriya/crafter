@@ -23,6 +23,42 @@
   height: 100% !important;
 }
 
+.ant-card {
+  border: 1px solid rgba(137, 137, 137, 0.43);
+  border-radius: 8px;
+  height: 100%;
+  position: relative;
+  .ant-card-cover {
+    margin-top: 0px;
+  }
+  .ant-card-meta-title {
+    font-size: 24px;
+    white-space: inherit;
+    font-family: $extra-font;
+    font-weight: 700;
+    line-height: 32px;
+  }
+  .ant-card-meta-description {
+    font-family: $extra-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $blackColor;
+  }
+  .rightArrowDiv {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 20%;
+    width: 100%;
+    svg {
+      cursor: pointer;
+    }
+  }
+}
+.ant-card .ant-card-meta-detail > div:not(:last-child) {
+  margin-bottom: 20px;
+}
 @media (min-width: 320px) {
   .container {
     max-width: 294px;

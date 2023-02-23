@@ -8,6 +8,8 @@ import UseCases from "./pages/UseCases/UseCases";
 import Features from "./pages/Features/Features";
 import ScheduleNow from "./pages/ScheduleNow/ScheduleNow";
 import Intingration from "./pages/Intigrations/Intigration";
+import BlogPage from "./pages/Blog/BlogPage/BlogPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
           <Route path="/integrations" element={<Intingration />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blogPage" element={<BlogPage />} />
           <Route path="/useCases" element={<UseCases />} />
           <Route path="/scheduleNow" element={<ScheduleNow />} />
+          <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </div>

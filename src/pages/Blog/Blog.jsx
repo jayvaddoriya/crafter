@@ -1,16 +1,27 @@
 import { Card, Col, Row } from "antd";
 import Meta from "antd/es/card/Meta";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { blogData } from "./blogData";
+import "./Blog.scss";
 
 const Blog = () => {
+  const navigate = useNavigate();
+  const handleOnClick = (item, index) => {
+    navigate("/blogPage", { state: { blogItem: item, index: index } });
+  };
   return (
     <div className="container">
-      <Row justify="space-between" style={{ margin: "120px 0" }}>
+      <Row justify="space-between" className="mainRowBlog" gutter={[28, 28]}>
         {blogData.map((item, index) => {
           return (
-            <Col xxl={7} key={index}>
-              <Card cover={<img alt="blog1" src={item.image} />}>
+            <Col xxl={8} xl={8} lg={8} md={8} xs={12} key={index}>
+              <Card
+                cover={<img alt="blog1" src={item.image} />}
+                onClick={() => {
+                  handleOnClick(item, index);
+                }}
+              >
                 <Meta title={item.title} description={item.describtion} />
                 <div className="rightArrowDiv">
                   <svg

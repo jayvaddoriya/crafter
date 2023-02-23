@@ -14,6 +14,7 @@ import blog12 from "../../assets/png/blog/blog12.png";
 export const blogData = [
   {
     image: blog1,
+    blogTitle: "Blog1",
     title:
       "WhatsApp vs Crafter Teams : Which app is better for movie teams during production work?",
     describtion:
@@ -21,24 +22,29 @@ export const blogData = [
   },
   {
     image: blog2,
+    blogTitle: "Blog2",
     title: "Why are social media casting calls ineffective?",
     describtion:
       "We’re all aware of how every one use social media to find acting jobs and connect with filmmakers and casting directors. But let’s flip the script and talk about what it’s like  ",
   },
   {
     image: blog3,
+    blogTitle: "Blog3",
     title: "ROLL ,CAMERA, ACTION!",
     describtion:
       "THE IMPORTANCE OF COMMUNICATION IN FILMMAKING Film productions are incredibly complex operations. This is true whether you’re filming a short film, a web tv show or a movie. You’re not ",
   },
   {
     image: blog4,
+
+    blogTitle: "Blog4",
     title: "Crafter RAY Product Overview",
     describtion:
       "Casting management app for entertainment industry Using Crafter Ray film studios and new age teams in movie industry can easily manage their casting ",
   },
   {
     image: blog5,
+    blogTitle: "Blog5",
     title:
       "Introducing a powerful and more organised talent search app by Crafter",
     describtion:
@@ -46,6 +52,7 @@ export const blogData = [
   },
   {
     image: blog6,
+    blogTitle: "Blog6",
     title:
       "Here’s an example of the perfect online portfolio summary, according to entertainment industry career experts",
     describtion:
@@ -53,6 +60,7 @@ export const blogData = [
   },
   {
     image: blog7,
+    blogTitle: "Blog7",
     title:
       "Introducing Portfolio on Crafter: Build Your Presence When Looking for Your Next Project",
     describtion:
@@ -60,6 +68,7 @@ export const blogData = [
   },
   {
     image: blog8,
+    blogTitle: "Blog8",
     title:
       "Crafter aims to replace WhatsApp and how we want to do it for film crews to communicate",
     describtion:
@@ -67,12 +76,14 @@ export const blogData = [
   },
   {
     image: blog9,
+    blogTitle: "Blog9",
     title: "Talent search app for entertainment industry.",
     describtion:
       "As we announced early this year, Crafter is building new tools to help young artists and production houses communicate with each other and collaborate to create ",
   },
   {
     image: blog10,
+    blogTitle: "Blog10",
     title:
       "What are the challenges that young and upcoming film crews in film industry facing today ?",
     describtion:
@@ -80,12 +91,14 @@ export const blogData = [
   },
   {
     image: blog11,
+    blogTitle: "Blog11",
     title: "Can The Movies Survive The Next Twenty Years?",
     describtion:
       "The theatrical movie experience has proved remarkably resistant to online disruption so far. ",
   },
   {
     image: blog12,
+    blogTitle: "Blog12",
     title: "Make the switch from email to Crafter",
     describtion:
       "Insights for email veterans on how to replace cumbersome email workflows with simpler, channel-based messaging ",

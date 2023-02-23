@@ -1,0 +1,12 @@
+.mainRowBlog {
+  margin: 100px 0;
+  @media (max-width: 1440px) {
+    margin: 90px 0;
+  }
+  @media (max-width: 425px) {
+    margin: 53px 0;
+  }
+  .columOfBlog {
+    margin-bottom: 90px;
+  }
+}

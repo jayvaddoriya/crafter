@@ -1,10 +1,25 @@
 import { Col, Row } from "antd";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import MediumLogo from "../../assets/svg/components/MediumLogo";
 import "./footer.scss";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const heart = (
+    <svg
+      width="20"
+      height="18"
+      viewBox="0 0 20 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.0002 17.5708L8.671 16.3608C3.95016 12.08 0.833496 9.2475 0.833496 5.79167C0.833496 2.95917 3.05183 0.75 5.87516 0.75C7.47016 0.75 9.001 1.4925 10.0002 2.65667C10.9993 1.4925 12.5302 0.75 14.1252 0.75C16.9485 0.75 19.1668 2.95917 19.1668 5.79167C19.1668 9.2475 16.0502 12.08 11.3293 16.3608L10.0002 17.5708Z"
+        fill="#BD1313"
+      />
+    </svg>
+  );
   return (
     <div className="footer">
       <meta
@@ -39,7 +54,7 @@ const Footer = () => {
             <label htmlFor="legal">
               <h5>Legal Information</h5>
             </label>
-            <p>Privacy Policy</p>
+            <p onClick={() => navigate("/privacyPolicy")}>Privacy Policy</p>
             <p>Acceptable Use Policy</p>
             <p>Terms of Service</p>
           </Col>
@@ -81,7 +96,7 @@ const Footer = () => {
               <MediumLogo fill="#8C0019" />
             </Link>
           </div>
-          <p style={{ marginBottom: "0px" }}> Made with {`<3`} in Hyderabad</p>
+          <p className="hydrabadLine"> Made with {heart} in Hyderabad</p>
           <div className="companyTag">
             <p>Crafter © 2023</p>
           </div>

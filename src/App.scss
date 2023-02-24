@@ -29,8 +29,18 @@
   height: 100%;
   cursor: pointer;
   .ant-card-body {
+    padding-bottom: 60px;
     @media (max-width: 1024px) {
       padding: 12px;
+      padding-bottom: 60px;
+    }
+    @media (max-width: 834px) {
+      padding: 12px;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 425px) {
+      padding: 12px;
+      padding-bottom: 35px;
     }
   }
   .ant-card-cover {
@@ -90,6 +100,20 @@
   .rightArrowDiv {
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    bottom: 21px;
+    right: 0;
+    padding: 0 20px;
+    @media (max-width: 1024px) {
+      padding: 0 12px;
+    }
+    @media (max-width: 834px) {
+      bottom: 10px;
+    }
+    @media (max-width: 425px) {
+      bottom: 0px;
+      padding: 0 10px;
+    }
     svg {
       cursor: pointer;
       @media (max-width: 834px) {

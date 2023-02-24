@@ -167,7 +167,7 @@ const Pricing = () => {
               </div>
             </div>
           </Col>
-          <Col xxl={12}>
+          <Col xxl={12} xl={12} lg={12} md={12}>
             <div className="mainDiv onthermainDiv">
               <h3>Large Production Studios</h3>
               <p>

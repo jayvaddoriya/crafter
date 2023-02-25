@@ -134,6 +134,12 @@
     margin-bottom: 6px;
   }
 }
+@media (min-width: 280px) {
+  .container {
+    max-width: 254px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 320px) {
   .container {
     max-width: 294px;
@@ -149,13 +155,13 @@
 @media (min-width: 390px) {
   .container {
     max-width: 358px;
-    margin: 0 20px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 425px) {
   .container {
     max-width: 390px;
-    margin: 0 30px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 768px) {

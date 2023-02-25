@@ -1,8 +1,7 @@
 import React from "react";
 import "./coreTeam.scss";
 import coreTeamMobileWeb from "../../../assets/gifs/Web mockup.gif";
-import TeamMobileWeb from "../../../assets/gifs/mobile.gif";
-import gif from "../../../assets/gifs/Mobile RD 2 3.gif";
+import TeamMobileWeb from "../../../assets/gifs/Mobile-Screen-Recording-FINAL-unscreen.gif";
 import Button from "../../Button/Button";
 import { Col, Row } from "antd";
 
@@ -25,8 +24,6 @@ const CoreTeam = () => {
               src={TeamMobileWeb}
               alt="coreTeamMobileImg"
             />
-
-            <img className="imageofimage" src={gif} alt="coreTeamMobileImg" />
           </div>
           <img
             className="coreTeamMobileImg"

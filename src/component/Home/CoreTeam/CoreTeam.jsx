@@ -1,7 +1,7 @@
 import React from "react";
 import "./coreTeam.scss";
 import coreTeamMobileWeb from "../../../assets/gifs/Web mockup.gif";
-import TeamMobileWeb from "../../../assets/gifs/Mobile-Screen-Recording-FINAL-unscreen.gif";
+import TeamMobileWeb from "../../../assets/gifs/Mobile Mockup.gif";
 import Button from "../../Button/Button";
 import { Col, Row } from "antd";
 

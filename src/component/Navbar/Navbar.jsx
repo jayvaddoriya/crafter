@@ -9,7 +9,7 @@ import { Drawer } from "antd";
 const linksItem = [
   {
     linkName: "Demo",
-    to: "/",
+    to: "/demo",
   },
   {
     linkName: "Features",

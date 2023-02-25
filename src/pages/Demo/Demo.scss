@@ -1,0 +1,73 @@
+@import "../../styles/globle.scss";
+
+.demo {
+  margin: 90px 0;
+  text-align: center;
+  @media (max-width: 834px) {
+    margin: 53px 0;
+  }
+  h3 {
+    font-family: $extra-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 68px;
+    color: $blackColor;
+    @media (max-width: 1024px) {
+      font-size: 34px;
+    }
+  }
+  p {
+    font-family: $extra-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 41px;
+    color: $blackColor;
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+}
+.demoImage {
+  background-color: $primaryColor;
+  margin-top: 200px;
+  margin-bottom: 90px;
+  padding-bottom: 100px;
+  border-radius: 156px 0 156px 0;
+  @media (max-width: 1024px) {
+    margin-top: 160px;
+  }
+  @media (max-width: 834px) {
+    border-radius: 50px 0 50px 0;
+    margin-bottom: 53px;
+  }
+  .imageDemo {
+    text-align: center;
+    position: relative;
+    .iamgeOfDemo {
+      width: 60%;
+      margin-top: -100px;
+    }
+    .youTubeLogo {
+      width: 10%;
+      cursor: pointer;
+      position: absolute;
+      top: 39%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 1440px) {
+        top: 38%;
+      }
+      @media (max-width: 1024px) {
+        top: 33%;
+      }
+      @media (max-width: 834px) {
+        top: 27%;
+      }
+      @media (max-width: 768px) {
+        top: 25%;
+      }
+    }
+  }
+}

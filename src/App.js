@@ -10,6 +10,7 @@ import ScheduleNow from "./pages/ScheduleNow/ScheduleNow";
 import Intingration from "./pages/Intigrations/Intigration";
 import BlogPage from "./pages/Blog/BlogPage/BlogPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import Demo from "./pages/Demo/Demo";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LayoutProvider />}>
           <Route path="/" element={<Home />} />
+          <Route path="/demo" element={<Demo />} />
           <Route path="/features" element={<Features />} />
           <Route path="/integrations" element={<Intingration />} />
           <Route path="/pricing" element={<Pricing />} />

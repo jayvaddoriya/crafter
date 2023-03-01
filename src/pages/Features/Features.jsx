@@ -14,7 +14,7 @@ const Features = () => {
       {featureData.map((feature) => {
         return <FeatureItem feature={feature} />;
       })}
-      <div className="features-description">
+      {/* <div className="features-description">
         <p>
           Threaded messages are essentially that. You can use threaded messages
           in Crews’s channels, direct messages, and Apps. In each of these
@@ -27,7 +27,7 @@ const Features = () => {
           message someone. In both instances, there is an option to add a
           threaded message as a reply.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -21,8 +21,8 @@
   .usecase-text-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-top: 72px;
+    gap: 18px;
+    margin-top: 50px;
     font-family: $extra-font;
     font-size: 18px;
     color: #1d1c1d;
@@ -65,7 +65,7 @@
     .usecase-topic-container {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 18px;
       @media (max-width: 1024px) {
         gap: 14px;
       }

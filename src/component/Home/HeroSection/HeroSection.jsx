@@ -2,13 +2,26 @@ import { Col, Form, Input, Row } from "antd";
 import { useForm } from "antd/es/form/Form";
 import React from "react";
 import Button from "../../Button/Button";
+import emailjs from "emailjs-com";
 import "./heroSection.scss";
+import { toast } from "react-toastify";
 
 const HeroSection = () => {
   const [form] = useForm();
   const handleOnSubmit = (values) => {
-    console.log(values);
-    form.resetFields();
+    emailjs
+      .send("service_zng38u4", "template_b613qrx", values, "vy_FxezavPe71pueb")
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.resetFields();
+          toast.success("Email send");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Somthing went wrong");
+        }
+      );
   };
   return (
     <div className="container">

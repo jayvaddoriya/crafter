@@ -3,13 +3,26 @@ import { useForm } from "antd/es/form/Form";
 import TextArea from "antd/es/input/TextArea";
 import React from "react";
 import Button from "../../component/Button/Button";
+import emailjs from "emailjs-com";
 import "./scheduleNow.scss";
+import { toast } from "react-toastify";
 
 const ScheduleNow = () => {
   const [form] = useForm();
   const handleOnSubmit = (values) => {
-    console.log(values);
-    form.resetFields();
+    emailjs
+      .send("service_wp6wf1p", "template_794u15t", values, "vy_FxezavPe71pueb")
+      .then(
+        (result) => {
+          console.log(result.text);
+          form.resetFields();
+          toast.success("Email send");
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Somthing went wrong");
+        }
+      );
   };
   return (
     <div className="scheduleNow container">

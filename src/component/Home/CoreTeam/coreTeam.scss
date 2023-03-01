@@ -51,12 +51,12 @@
     }
     .divoo {
       .teamMobileImg {
-        width: 110%;
+        width: 105%;
         position: relative;
         margin-top: -100px;
         z-index: 999;
         @media (max-width: 1440px) {
-          width: 105%;
+          width: 100%;
           margin-top: -96px;
         }
         @media (max-width: 1280px) {
@@ -108,7 +108,7 @@
     }
     .coreTeamMobileImg {
       position: absolute;
-      top: -160px;
+      top: -180px;
       right: 0;
       border-radius: 27px;
       width: 78%;

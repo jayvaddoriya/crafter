@@ -13,7 +13,7 @@ let schema = yup.object().shape({
   lastname: yup.string().required("Please enter your last name"),
   email: yup.string().email().required("Please enter your email"),
   jobTitle: yup.string().required("Please enter your job title"),
-  company: yup.string().required("Please enter your company"),
+  companyname: yup.string().required("Please enter your company"),
   country: yup.string().required("Please enter your country"),
   textAreaField: yup.string().required("Please enter text area"),
   phoneNumber: yup
@@ -91,7 +91,7 @@ const ScheduleNow = () => {
               <Form.Item name="phoneNumber" rules={[yupSync]}>
                 <Input placeholder="Phone number*" />
               </Form.Item>
-              <Form.Item name="company" rules={[yupSync]}>
+              <Form.Item name="companyname" rules={[yupSync]}>
                 <Input placeholder="Company*" />
               </Form.Item>
               <Form.Item name="country" rules={[yupSync]}>

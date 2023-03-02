@@ -3,6 +3,7 @@ import "./Demo.scss";
 import iamgeOfDemo from "../../assets/png/demo.png";
 import mobile from "../../assets/png/mobile.png";
 import youTubeLogo from "../../assets/svg/youTubeLogo.svg";
+import { Link } from "react-router-dom";
 
 const Demo = () => {
   return (
@@ -19,7 +20,9 @@ const Demo = () => {
       <div className="demoImage">
         <div className="container imageDemo">
           <img className="iamgeOfDemo" src={iamgeOfDemo} alt="iamgeOfDemo" />
-          <img className="youTubeLogo" src={youTubeLogo} alt="youTubeLogo" />
+          <Link to="https://youtu.be/6bXNMmk5dXI" target="_blank">
+            <img className="youTubeLogo" src={youTubeLogo} alt="youTubeLogo" />
+          </Link>
         </div>
       </div>
       <div className="demoImagemobile">
@@ -29,7 +32,9 @@ const Demo = () => {
             src={mobile}
             alt="iamgeOfMobileDemo"
           />
-          <img className="youTubeLogo" src={youTubeLogo} alt="youTubeLogo" />
+          <Link to="https://youtu.be/PEqMQEgUI8c" target="_blank">
+            <img className="youTubeLogo" src={youTubeLogo} alt="youTubeLogo" />
+          </Link>
         </div>
       </div>
     </>

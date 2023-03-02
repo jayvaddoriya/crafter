@@ -9,7 +9,7 @@ const NavHeader = () => {
     navigate("/scheduleNow");
   };
   const handleOnTryCrafterClick = () => {
-    navigate("/");
+    navigate("/scheduleNow ");
   };
   return (
     <div className="navHeader">

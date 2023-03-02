@@ -5,12 +5,23 @@ import Button from "../../Button/Button";
 import emailjs from "emailjs-com";
 import "./heroSection.scss";
 import { toast } from "react-toastify";
+import * as yup from "yup";
+
+let schema = yup.object().shape({
+  email: yup.string().email().required(),
+});
+
+const yupSync = {
+  async validator({ field }, value) {
+    await schema.validateSyncAt(field, { [field]: value });
+  },
+};
 
 const HeroSection = () => {
   const [form] = useForm();
   const handleOnSubmit = (values) => {
     emailjs
-      .send("service_zng38u4", "template_b613qrx", values, "vy_FxezavPe71pueb")
+      .send("service_zng38u4", "template_794u15t", values, "vy_FxezavPe71pueb")
       .then(
         (result) => {
           console.log(result.text);
@@ -47,15 +58,7 @@ const HeroSection = () => {
           <Row justify="center">
             <Col xxl={24}>
               <Form className="formdiv" form={form} onFinish={handleOnSubmit}>
-                <Form.Item
-                  name="email"
-                  rules={[
-                    {
-                      required: true,
-                      message: "Please input your username!",
-                    },
-                  ]}
-                >
+                <Form.Item name="email" rules={[yupSync]}>
                   <Input placeholder="Business email address*" />
                 </Form.Item>
                 <Form.Item>

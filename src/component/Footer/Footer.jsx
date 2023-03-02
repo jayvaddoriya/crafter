@@ -37,17 +37,31 @@ const Footer = () => {
             <label htmlFor="company">
               <h5>Company</h5>
             </label>
-            <p>News & Media</p>
-            <p>Careers</p>
-            <p>FAQ</p>
+            <p>
+              <Link
+                to="https://www.linkedin.com/company/crafter-inc/"
+                target="_blank"
+              >
+                News & Media
+              </Link>
+            </p>
+            <p>
+              <Link
+                to="https://www.linkedin.com/company/crafter-inc/"
+                target="_blank"
+              >
+                Careers
+              </Link>
+            </p>
+            <p onClick={() => navigate("/scheduleNow")}>FAQ</p>
           </Col>
           <Col xxl={6} xl={6} lg={6} md={6} xs={24} className="footer-menu">
             <input type="checkbox" id="help" className="dd-input" />
             <label htmlFor="help">
               <h5>Help & Resources</h5>
             </label>
-            <p>Help Centre</p>
-            <p>Contact support</p>
+            <p onClick={() => navigate("/scheduleNow")}>Help Centre</p>
+            <p onClick={() => navigate("/scheduleNow")}>Contact support</p>
           </Col>
           <Col xxl={6} xl={6} lg={6} md={6} xs={24} className="footer-menu">
             <input type="checkbox" id="legal" className="dd-input" />
@@ -55,8 +69,10 @@ const Footer = () => {
               <h5>Legal Information</h5>
             </label>
             <p onClick={() => navigate("/privacyPolicy")}>Privacy Policy</p>
-            <p>Acceptable Use Policy</p>
-            <p>Terms of Service</p>
+            <p onClick={() => navigate("/privacyPolicy")}>
+              Acceptable Use Policy
+            </p>
+            <p onClick={() => navigate("/privacyPolicy")}>Terms of Service</p>
           </Col>
         </Row>
         <div className="lastFooter">

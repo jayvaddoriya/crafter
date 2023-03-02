@@ -59,8 +59,20 @@
           width: 100%;
           margin-top: -96px;
         }
+        @media (max-width: 1439px) {
+          width: 94%;
+          margin-top: -96px;
+        }
+        @media (max-width: 1349px) {
+          width: 86%;
+          margin-top: -96px;
+        }
         @media (max-width: 1280px) {
           width: 85%;
+          margin-top: -111px;
+        }
+        @media (max-width: 1139px) {
+          width: 78%;
           margin-top: -111px;
         }
         @media (max-width: 1024px) {

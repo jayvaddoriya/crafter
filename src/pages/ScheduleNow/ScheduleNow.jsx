@@ -6,6 +6,37 @@ import Button from "../../component/Button/Button";
 import emailjs from "emailjs-com";
 import "./scheduleNow.scss";
 import { toast } from "react-toastify";
+import * as yup from "yup";
+
+let schema = yup.object().shape({
+  firstname: yup.string().required("Please enter your first name"),
+  lastname: yup.string().required("Please enter your last name"),
+  email: yup.string().email().required("Please enter your email"),
+  jobTitle: yup.string().required("Please enter your job title"),
+  company: yup.string().required("Please enter your company"),
+  country: yup.string().required("Please enter your country"),
+  textAreaField: yup.string().required("Please enter text area"),
+  phoneNumber: yup
+    .number()
+    .required("Please enter phone number")
+    .typeError("Number only.")
+    .positive()
+    .integer()
+    .round(),
+  movieStudioSize: yup
+    .number()
+    .required("Please enter movie studio size")
+    .typeError("Number only.")
+    .positive()
+    .integer()
+    .round(),
+});
+
+const yupSync = {
+  async validator({ field }, value) {
+    await schema.validateSyncAt(field, { [field]: value });
+  },
+};
 
 const ScheduleNow = () => {
   const [form] = useForm();
@@ -45,105 +76,33 @@ const ScheduleNow = () => {
             <h2>Let’s get to know you</h2>
             <p>*Required fields</p>
             <Form className="formdiv" form={form} onFinish={handleOnSubmit}>
-              <Form.Item
-                name="firstname"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter your first name",
-                  },
-                ]}
-              >
+              <Form.Item name="firstname" rules={[yupSync]}>
                 <Input placeholder="First name*" />
               </Form.Item>
-              <Form.Item
-                name="lastname"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter your last name",
-                  },
-                ]}
-              >
+              <Form.Item name="lastname" rules={[yupSync]}>
                 <Input placeholder="Last name*" />
               </Form.Item>
-              <Form.Item
-                name="email"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter your email",
-                  },
-                ]}
-              >
+              <Form.Item name="email" rules={[yupSync]}>
                 <Input placeholder="Email address*" />
               </Form.Item>
-              <Form.Item
-                name="jobTitle"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter your job title",
-                  },
-                ]}
-              >
+              <Form.Item name="jobTitle" rules={[yupSync]}>
                 <Input placeholder="Job title*" />
               </Form.Item>
-              <Form.Item
-                name="phoneNumber"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter your phone number",
-                  },
-                ]}
-              >
+              <Form.Item name="phoneNumber" rules={[yupSync]}>
                 <Input placeholder="Phone number*" />
               </Form.Item>
-              <Form.Item
-                name="company"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter your company",
-                  },
-                ]}
-              >
+              <Form.Item name="company" rules={[yupSync]}>
                 <Input placeholder="Company*" />
               </Form.Item>
-              <Form.Item
-                name="country"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please select the country",
-                  },
-                ]}
-              >
+              <Form.Item name="country" rules={[yupSync]}>
                 <Input placeholder="Country*" />
               </Form.Item>
               <h2>Tell us about your Studio</h2>
-              <Form.Item
-                name="movieStudioSize"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter movie studio size",
-                  },
-                ]}
-              >
+              <Form.Item name="movieStudioSize" rules={[yupSync]}>
                 <Input placeholder="Movie studio size*" />
               </Form.Item>
               <h2>How can we help you today?</h2>
-              <Form.Item
-                name="textAreaField"
-                rules={[
-                  {
-                    required: true,
-                    message: "Please enter about your self",
-                  },
-                ]}
-              >
+              <Form.Item name="textAreaField" rules={[yupSync]}>
                 <TextArea
                   rows={8}
                   placeholder="Let us know how can we help you*"

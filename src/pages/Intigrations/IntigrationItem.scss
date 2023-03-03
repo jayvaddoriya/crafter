@@ -16,6 +16,9 @@
   @media (max-width: 426px) {
     margin: 0 30px;
   }
+  @media (max-width: 280px) {
+    margin: 0 16px;
+  }
   .usecase-text-container {
     display: flex;
     flex-direction: column;

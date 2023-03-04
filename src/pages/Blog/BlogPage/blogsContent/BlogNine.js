@@ -24,7 +24,7 @@ const BlogNine = () => {
       </p>
       <p>Here’s how emerging artists can use Crafter.</p>
       <h3>PORTFOLIO</h3>
-      <div className="imagDiv">
+      <div className="mobileimagDiv">
         <img src={ninty} alt="blogsimages" />
       </div>
       <h3 className="decMarBottom">Simple, Easy to maintain Portfolio</h3>
@@ -33,7 +33,7 @@ const BlogNine = () => {
         projects from YouTube via links, so you can avoid uploading those. You
         need to upload your portfolio pictures.
       </p>
-      <div className="imagDiv">
+      <div className="mobileimagDiv">
         <img src={twentyTwo} alt="blogsimages" />
       </div>
       <h3 className="decMarBottom">Feed to keep in touch</h3>
@@ -44,7 +44,7 @@ const BlogNine = () => {
         also help you to build meaningful connections in the future.
       </p>
       <h3>ACTIVITY</h3>
-      <div className="imagDiv">
+      <div className="mobileimagDiv">
         <img src={twentyThree} alt="blogsimages" />
       </div>
       <h3 className="decMarBottom">Moments that Matter</h3>
@@ -56,7 +56,7 @@ const BlogNine = () => {
         to each other earlier.
       </p>
       <h3>FOLLOWERS</h3>
-      <div className="imagDiv">
+      <div className="mobileimagDiv">
         <img src={twentyFour} alt="blogsimages" />
       </div>
       <h3 className="decMarBottom">People to keep in touch</h3>

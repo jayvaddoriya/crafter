@@ -13,7 +13,7 @@ const BlogSeven = () => {
         cinematographer or an editor etc. , before you even think of for any
         role.
       </p>
-      <div className="imagDiv">
+      <div className="mobileimagDiv">
         <img src={ninty} alt="blogsimages" />
       </div>
       <p>

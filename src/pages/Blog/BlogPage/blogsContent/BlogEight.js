@@ -27,14 +27,7 @@ const BlogEight = () => {
         sources — WhatsApp marketing, order receipts, new delivery updates,
         group comments, forward messages, monthly statements, blah blah blah.
       </p>
-      <div
-        className="imagDiv"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div className="twoImagDiv">
         <img src={twenty} alt="blogsimages" />
         <img src={twentyOne} alt="blogsimages" />
       </div>

@@ -11,10 +11,10 @@ import BlogSeven from "./blogsContent/BlogSeven";
 import BlogEight from "./blogsContent/BlogEight";
 import BlogNine from "./blogsContent/BlogNine";
 import BlogTen from "./blogsContent/BlogTen";
-
-import "./BlogPage.scss";
 import BlogEleven from "./blogsContent/BlogEleven";
 import BlogTwell from "./blogsContent/BlogTwell";
+
+import "./BlogPage.scss";
 
 const BlogPage = () => {
   const {

@@ -4,6 +4,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { blogData } from "./blogData";
 import "./Blog.scss";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -12,6 +13,17 @@ const Blog = () => {
   };
   return (
     <div className="container">
+      <Helmet>
+        <title>
+          Crafter Crews | Insights and Tips for Collaborating on Movie Projects
+          | WhatsApp Alternative Blog
+        </title>
+      </Helmet>
+      <meta
+        name="description"
+        content="Stay up to date with our WhatsApp alternative blog, where we share insights, tips, and best practices for streamlining communication and collaboration on movie projects. Subscribe today!"
+      />
+      <meta property="og:title" content="Where collaboration happens" />
       <Row justify="space-between" className="mainRowBlog" gutter={[28, 28]}>
         {blogData.map((item, index) => {
           return (

@@ -1,10 +1,22 @@
 import { Button, Col, Row } from "antd";
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./Pricing.scss";
 
 const Pricing = () => {
   return (
     <div className="container pricing">
+      <Helmet>
+        <title>
+          Crafter Crews | Flexible Pricing Plans for Our WhatsApp Alternative |
+          Film Crews
+        </title>
+      </Helmet>
+      <meta
+        name="description"
+        content="Our WhatsApp alternative for Film Crews offers flexible pricing plans to fit your project needs and budget. From small indie projects to large-scale productions, explore our pricing options today."
+      />
+      <meta property="og:title" content="Where collaboration happens" />
       <div className="heading">
         <p>PRICING PLANS</p>
       </div>

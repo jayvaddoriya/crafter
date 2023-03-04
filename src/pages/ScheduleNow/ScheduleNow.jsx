@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 import "./scheduleNow.scss";
 import { toast } from "react-toastify";
 import * as yup from "yup";
+import { Helmet } from "react-helmet";
 
 let schema = yup.object().shape({
   firstname: yup.string().required("Please enter your first name"),
@@ -57,9 +58,15 @@ const ScheduleNow = () => {
   };
   return (
     <div className="scheduleNow container">
+      <Helmet>
+        <title>
+          Crafter Crews | Contact Us for More Information about Our WhatsApp
+          Alternative | Film Crews
+        </title>
+      </Helmet>
       <meta
         name="description"
-        content="Crafter crews is a new and better way to communicate with all your film crew members. It’s faster, well organised and more convenient  than email or WhatsApp"
+        content="Get in touch with us to learn more about our WhatsApp alternative for Film Crews. Our team is happy to answer any questions you have about our software and how it can benefit your movie projects."
       />
       <meta property="og:title" content="Where collaboration happens" />
       <Row justify="space-between">

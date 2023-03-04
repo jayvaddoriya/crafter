@@ -1,9 +1,21 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./PrivacyPolicy.scss";
 
 const PrivacyPolicy = () => {
   return (
     <div className="container privacyPolicy">
+      <Helmet>
+        <title>
+          Crafter Crews | Privacy Policy for Our WhatsApp Alternative | Film
+          Crews
+        </title>
+      </Helmet>
+      <meta
+        name="description"
+        content="Read our privacy policy to learn about how we collect, use, and protect your personal information when you use our WhatsApp alternative for Film Crews. Your privacy is important to us, and we're committed to keeping your information safe."
+      />
+      <meta property="og:title" content="Where collaboration happens" />
       <div className="heading">
         <p>Privacy Policy</p>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { featureData } from "./featureData";
 import FeatureItem from "./FeatureItem";
 import "./Features.scss";
@@ -6,9 +7,16 @@ import "./Features.scss";
 const Features = () => {
   return (
     <div className="features-container container">
+      <Helmet>
+        {" "}
+        <title>
+          Crafter Crews | Powerful Features for Collaborating on Movie Projects
+          | WhatsApp Alternative
+        </title>
+      </Helmet>
       <meta
         name="description"
-        content="Crafter crews is a new and better way to communicate with all your film crew members. It’s faster, well organised and more convenient  than email or WhatsApp"
+        content="Our WhatsApp alternative provides a range of powerful features to streamline communication and collaboration on movie projects. From real-time messaging to task management, explore our features today."
       />
       <meta property="og:title" content="Where collaboration happens" />
       {featureData.map((feature) => {

@@ -4,8 +4,10 @@ import coreTeamMobileWeb from "../../../assets/gifs/Web mockup.gif";
 import TeamMobileWeb from "../../../assets/gifs/Mobile GIF.gif";
 import Button from "../../Button/Button";
 import { Col, Row } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const CoreTeam = () => {
+  const navigate = useNavigate();
   return (
     <>
       <meta
@@ -36,7 +38,11 @@ const CoreTeam = () => {
             <Col xxl={24}>
               <h1>Want to see what Crews can do for you?</h1>
               <div className="btnDiv">
-                <Button title="Request a demo" type="primaryBig" />
+                <Button
+                  title="Request a demo"
+                  type="primaryBig"
+                  onClick={() => navigate("/demo")}
+                />
               </div>
             </Col>
           </Row>
